@@ -1,4 +1,4 @@
-### SYN Flood Attack
+# SYN Flood Attack
 
 A SYN flood occurs when a host becomes so overwhelmed by SYN segments initiating incomplete connection requests that it can no longer process legitimate connection requests.
 
@@ -6,4 +6,4 @@ Two hosts establish a TCP connection with a triple exchange of packets known as 
 
 In this simple script the user has to enter the ip and the post of the designated target.
 
-# Installation of Net:RawIP is required.
+### Installation of Net:RawIP is required.
